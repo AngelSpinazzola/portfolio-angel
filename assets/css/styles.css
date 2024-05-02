@@ -294,13 +294,7 @@ nav ul li {
   padding-left: 550px;
   font-size: 60px;
 }
-
-
-
-
 /* Social button ends */
-
-
 
 /* Scroll to top button */
 .scroll-up {
@@ -381,13 +375,26 @@ footer {
     height: 10rem;
     width: 10rem;
     border-radius: 50%;
-    margin-top: 20%;
+    margin-top: 40%;
   }
 
   .bio {
     margin-top: 10%;
     margin-left: 5%;
   }
+
+  .socials {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-left: 180px;
+  }
+
+  .socials a {
+    margin: 0 10px;
+  }
+  
 
   .more-about {
     margin-top: 2rem;
@@ -428,12 +435,19 @@ footer {
 
 @media screen and (max-width: 420px) {
   .hero img {
-    height: 5rem;
-    width: 5rem;
+    height: 8rem;
+    width: 8rem;
     border-radius: 50%;
-    margin-top: 20%;
+    margin-top: 30%;
   }
 
+  .socials {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-left: 180px;
+  }
   
 
   .bio {
