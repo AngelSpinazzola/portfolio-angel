@@ -418,12 +418,18 @@ footer {
   .contact-form-container {
     max-width: 23.75rem;
   }
+  /* FALTA DEFINIR */
+  .socials {
+    
+    flex-direction: column;
+     
+  }
 }
 
 @media screen and (max-width: 420px) {
   .hero img {
-    height: 37.5rem;
-    width: 23rem;
+    height: 25.5rem;
+    width: 20rem;
   }
 
   .bio {
@@ -437,4 +443,5 @@ footer {
   .contact-form-container {
     max-width: 17.75rem;
   }
+  
 }
