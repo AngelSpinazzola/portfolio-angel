@@ -433,6 +433,11 @@ footer {
     margin-top: 30%;
   }
 
+  .skills-wrapper{
+    display: flex;
+    justify-content: center;
+  }
+
   .socials {
     display: flex;
     justify-content: center;
