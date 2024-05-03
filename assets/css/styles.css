@@ -436,6 +436,7 @@ footer {
   .skills-wrapper{
     display: flex;
     justify-content: center;
+    padding: 0 30px;
   }
 
   .socials {
