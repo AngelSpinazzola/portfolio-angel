@@ -29,3 +29,15 @@ scrollUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+// script slider projects
+
+$(document).ready(function(){
+  $('.project-slider').slick({
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true // Habilita las flechas
+  });
+});

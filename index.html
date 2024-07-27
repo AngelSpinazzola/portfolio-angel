@@ -10,6 +10,16 @@
 
     <!--CSS Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick Slider JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 
     <!-- Favicons -->
     <!-- Animate CSS CDN -->
@@ -40,8 +50,7 @@
     <section class="hero" id="about">
       <img
         src="./assets/images/foto-perfil.jpg"
-        alt="jane-doe"
-        loading="lazy"
+        alt="pic-angel"
         class="hero-img"
       />
       <div class="bio animate__animated animate__shakeX">
@@ -146,43 +155,40 @@
     <section class="projects" id="projects">
       <h2 class="projects-title">Proyectos</h2>
       <div class="projects-container">
+        <div class="project-container project-card first-project">
+          <div class="project-slider-wrapper">
+            <div class="project-slider">
+              <div><img src="assets/images/sanguisUno.png" alt="slide1" loading="lazy" /></div>
+              <div><img src="assets/images/SanguisDos.png" alt="slide2" loading="lazy" /></div>
+              <div><img src="assets/images/SanguisTres.png" alt="slide3" loading="lazy" /></div>
+              <div><img src="assets/images/SanguisCuatro.png" alt="slide4" loading="lazy" /></div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Sanguis</h3>
+            <p class="project-details">
+              App Web para donar sangre, desarrollada en ASP.NET | Bootstrap | SQL Server
+            </p>
+            <a href="https://github.com/AngelSpinazzola/TPC-Equipo-8" target="_blank" class="project-link">GitHub</a>
+          </div>
+        </div>
+        <!-- Repite el bloque de proyecto para los demás proyectos -->
         <div class="project-container project-card">
-          <img
-            src="assets/images/cardJitsu2.png"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Card-Jitsu++</h3>
-          <p class="project-details">
-            Juego de cartas desarrollado en C++, basado en el antiguo juego Card-Jitsu, de Club Penguin. 
-          </p>
+          <img src="assets/images/cardJitsu2.png" alt="expense-tracker" loading="lazy" class="project-pic" />
+          <h3 class="project-title other-project-title">Card-Jitsu++</h3>
+          <p class="project-details">Juego de cartas desarrollado en C++ basado en el antiguo juego Card-Jitsu, de Club Penguin</p>
           <a href="https://github.com/AngelSpinazzola/Juego-de-cartas-en-C-" target="_blank" class="project-link">GitHub</a>
         </div>
         <div class="project-container project-card">
-          <img
-            src="assets/images/appWinform2.png"
-            alt="netflic-clone"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">ABM Artículos</h3>
-          <p class="project-details">
-            Aplicación de escritorio desarrollada con C# | WinForms | .NET | SQL, que gestiona el abm de artículos
-          </p>
+          <img src="assets/images/appWinform2.png" alt="netflic-clone" loading="lazy" class="project-pic" />
+          <h3 class="project-title other-project-title">ABM Artículos</h3>
+          <p class="project-details">App de escritorio desarrollada con C# | WinForms | .NET | SQL, que gestiona el abm de artículos</p>
           <a href="https://github.com/AngelSpinazzola/tp-winform-equipo-8" target="_blank" class="project-link">GitHub</a>
         </div>
         <div class="project-container project-card">
-          <img
-            src="assets/images/appTareas.png"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">ABM de tareas</h3>
-          <p class="project-details">
-            Aplicación web de tareas con su ABM desarrollada en ASP.NET | EntityFramework | SQL
-          </p>
+          <img src="assets/images/appTareas.png" alt="greeny-earth" loading="lazy" class="project-pic" />
+          <h3 class="project-title other-project-title">ABM de tareas</h3>
+          <p class="project-details">App Web de tareas con su ABM desarrollada en ASP.NET | EntityFramework | SQL</p>
           <a href="https://github.com/AngelSpinazzola/C-SHARP/tree/main/CRUD%20en%20ASP.NET%20y%20SQL" target="_blank" class="project-link">GitHub</a>
         </div>
       </div>
