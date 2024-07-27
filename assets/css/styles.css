@@ -416,7 +416,6 @@ footer {
   background-color: rgba(0, 0, 0, 0.5); 
 }
 
-/* Estilo de las flechas */
 .project-slider .slick-prev:before,
 .project-slider .slick-next:before {
   font-family: 'Font Awesome 5 Free'; 
@@ -574,6 +573,9 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
+  body {
+    padding-top: 4rem; 
+  }
   .hero img {
     height: 8rem;
     width: 8rem;
