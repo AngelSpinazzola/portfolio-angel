@@ -572,76 +572,123 @@ footer {
   }
 }
 
-@media screen and (max-width: 420px) {
-  body {
-    padding-top: 4rem; 
+@media only screen and (max-width: 420px) {
+  /* Navbar */
+  nav {
+    padding: 1rem 1rem;
   }
+
+  .burger-menu {
+    display: block;
+  }
+
+  nav ul {
+    display: none; /* Oculta el menú en pantallas pequeñas */
+  }
+
+  nav.active ul {
+    display: flex; /* Muestra el menú cuando se activa el botón burger */
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 60px; /* Ajusta según el tamaño del navbar */
+    left: 0;
+    right: 0;
+    background-color: var(--bg-color);
+    padding: 1rem;
+  }
+
+  /* Hero section */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
   .hero img {
-    height: 8rem;
-    width: 8rem;
-    border-radius: 50%;
-    margin-top: 30%;
+    height: 12rem;
+    width: 12rem;
   }
-
-  .skills-wrapper{
-    display: flex;
-    justify-content: center;
-    padding: 0 30px;
-  }
-
-  .socials {
-    display: flex;
-    justify-content: center;
-    padding-top: 25px;
-    padding-left: 5px;
-  }
-  
 
   .bio {
-    width: 18.3rem;
+    margin-top: 2rem;
+    margin-left: 0;
+    text-align: center;
   }
 
-  .project-container {
-    width: 17.875rem;
+  .bio h1 {
+    font-size: 1.5rem;
   }
 
-  .contact-form-container {
-    max-width: 17.75rem;
+  /* Skills section */
+  .skills {
+    padding: 1rem;
   }
 
+  .skills-wrapper img {
+    width: 50px; /* Ajusta el tamaño de los íconos para pantallas pequeñas */
+    height: 50px;
+  }
+
+  /* Projects section */
   .projects-container {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 0; 
-    margin: 0 auto; 
-    max-width: 100%;
-    justify-items: center; 
   }
 
   .project-card {
-    max-width: 100%; 
-    height: auto; 
-    box-sizing: border-box; 
-  }
-  
-  .project-slider {
-    height: 150px; 
+    max-width: 100%;
+    height: auto;
   }
 
-  .project-card img,
-  .project-card .project-pic {
-    width: 100%; 
-    height: auto; 
-    object-fit: cover; 
+  .project-pic {
+    height: auto;
   }
 
-  .other-project-title {
-    margin-top: 1rem; 
-  }
-  .first-project .project-content h3 {
-    position: relative;
-    top: -20px;
+  .project-slider-wrapper {
+    height: auto; /* Ajusta la altura del slider para pantallas pequeñas */
   }
 
+  .project-slider .slick-prev,
+  .project-slider .slick-next {
+    width: 25px;
+    height: 25px;
+  }
+
+  .project-slider .slick-prev:before,
+  .project-slider .slick-next:before {
+    font-size: 16px;
+  }
+
+  /* Contacts section */
+  .contact-form-container {
+    padding: 0.5rem;
+  }
+
+  .contact-form-container .input-field {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .submit-btn {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  /* Social buttons */
+  .socials {
+    font-size: 40px;
+  }
+
+  /* Scroll to top button */
+  .scroll-up {
+    right: 2%;
+    bottom: 2%;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .up-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
