@@ -625,11 +625,6 @@ footer {
     padding: 1rem;
   }
 
-  .skills-wrapper img {
-    width: 50px; /* Ajusta el tamaño de los íconos para pantallas pequeñas */
-    height: 50px;
-  }
-
   /* Projects section */
   .projects-container {
     grid-template-columns: 1fr;
@@ -645,7 +640,7 @@ footer {
   }
 
   .project-slider-wrapper {
-    height: auto; /* Ajusta la altura del slider para pantallas pequeñas */
+    height: auto; 
   }
 
   .project-slider .slick-prev,
