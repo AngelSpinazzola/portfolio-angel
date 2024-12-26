@@ -35,5 +35,38 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
+document.querySelectorAll('.project-card').forEach(card => {
+    let isFlipped = false;
+    let touchStartX = 0;
+    
+    // Manejador para dispositivos táctiles
+    card.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+    });
+
+    card.addEventListener('touchend', (e) => {
+        const touchEndX = e.changedTouches[0].clientX;
+        const diff = touchStartX - touchEndX;
+
+        // Si el usuario hace un gesto de deslizamiento
+        if (Math.abs(diff) > 50) {
+            isFlipped = !isFlipped;
+            const inner = card.querySelector('.project-card-inner');
+            inner.style.transform = isFlipped ? 'rotateY(180deg)' : 'rotateY(0)';
+        }
+    });
+
+    // Manejador para mouse
+    card.addEventListener('mouseenter', () => {
+        const inner = card.querySelector('.project-card-inner');
+        inner.style.transform = 'rotateY(180deg)';
+    });
+
+    card.addEventListener('mouseleave', () => {
+        const inner = card.querySelector('.project-card-inner');
+        inner.style.transform = 'rotateY(0)';
+    });
+});
+
 
 
