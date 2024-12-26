@@ -705,7 +705,8 @@ body.dark-mode {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     padding: 0 1rem;
-  }
+    text-align: center; 
+  
 
   .first-set,
   .second-set {
@@ -725,6 +726,7 @@ body.dark-mode {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 20px;
   }
 
   /* Projects section */
@@ -764,11 +766,6 @@ body.dark-mode {
   .contact-form-container .input-field {
     padding: 0.5rem;
     font-size: 0.75rem;
-  }
-
-  .submit-btn {
-    padding: 0.5rem;
-    font-size: 0.875rem;
   }
 
   /* Social buttons */
