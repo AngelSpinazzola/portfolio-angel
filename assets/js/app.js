@@ -41,3 +41,28 @@ $(document).ready(function(){
     arrows: true // Habilita las flechas
   });
 });
+
+// Selector para el botón de tema
+const themeToggle = document.querySelector("#theme-toggle");
+const body = document.body;
+
+// Verifica si hay una preferencia guardada
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme === "dark") {
+  body.classList.add("dark-mode");
+  themeToggle.innerHTML = '<i class="fa-regular fa-sun"></i>';
+}
+
+// Función para cambiar el tema
+themeToggle.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+  
+  // Cambia el ícono según el modo
+  if (body.classList.contains("dark-mode")) {
+    themeToggle.innerHTML = '<i class="fa-regular fa-sun"></i>';
+    localStorage.setItem("theme", "dark");
+  } else {
+    themeToggle.innerHTML = '<i class="fa-regular fa-moon"></i>';
+    localStorage.setItem("theme", "light");
+  }
+});

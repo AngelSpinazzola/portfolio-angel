@@ -49,6 +49,9 @@
         <ion-icon class="bars" name="menu-outline"></ion-icon>
         <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
       </button>
+      <button class="theme-toggle" id="theme-toggle">
+        <i class="fa-regular fa-moon"></i>
+      </button>
     </nav>
 
     <!-- Hero Section -->
@@ -178,54 +181,25 @@
 
     <!-- Contact section -->
     <section class="contact" id="contact">
-      <h2>Ponte en contacto conmigo</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
-          <form action="https://formspree.io/f/xnqewbgz" method="POST">
-            <div class="form-control">
-              <label for="name">Nombre</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Introduzca su nombre"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Introduzca su email"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="message">Mensaje</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Ingrese su mensaje"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Enviar"
-              id="submit-btn"
-              class="submit-btn"
+      <div class="contact-container">
+        <h2>Empezar una conversación</h2>
+        <div class="contact-icon-container">
+          <a
+            href="https://wa.me/1123921192?text=Hola,%20me%20gustaría%20ponerme%20en%20contacto%20contigo"
+            target="_blank"
+            class="whatsapp-link"
+            aria-label="Contactar por WhatsApp"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+              alt="WhatsApp"
+              class="whatsapp-icon"
             />
-          </form>
+          </a>
         </div>
       </div>
     </section>
+
 
     <!-- Scroll to top -->
     <i class="scroll-up" id="scroll-up"
@@ -234,10 +208,6 @@
         class="socicon up-arrow"
         alt=""
     /></i>
-
-    <!-- Footer section -->
-    <footer>
-    </footer>
 
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
