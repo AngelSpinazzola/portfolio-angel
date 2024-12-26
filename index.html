@@ -1,222 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta property="og:title" content="Portfolio" />
-    <meta property="og:description" content="Portfolio de Angel Spinazzola" />
-    <meta property="og:image" content="https://angelspinazzola.github.io/portfolio-angel/assets/images/portfolio-ico.png" />
-    <meta property="og:url" content="https://angelspinazzola.github.io/portfolio-angel/" />
-    <meta property="og:type" content="website" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<html lang="es">
 
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <!-- Slick Slider CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Slick Slider JS -->
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-
-    <!-- Favicons -->
-    <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Angel Spinazzola</title>
-  </head>
+</head>
 
-  <body>
-    <!-- Navbar -->
-    <nav>
-      <h1>Angel Spinazzola</h1>
-      <ul class="navigation">
-        <li><a href="#about" class="nav-link">Acerca de mi</a></li>
-        <li><a href="#skills" class="nav-link">Tecnologías</a></li>
-        <li><a href="#projects" class="nav-link">Proyectos</a></li>
-        <li><a href="#contact" class="nav-link">Contacto</a></li>
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
-      </button>
-      <button class="theme-toggle" id="theme-toggle">
-        <i class="fa-regular fa-moon"></i>
-      </button>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Angel Spinazzola</div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#skills">Skills</a>
+                <a href="#educacion">Educación</a>
+            </div>
+        </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-      <img
-        src="./assets/images/foto-perfil.jpg"
-        alt="pic-angel"
-        class="hero-img"
-      />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">¡Hola!</h2>
-        <h2 class="bio-title">Soy Angel</h2>
-        <p class="bio-text">
-          Un estudiante de programación de la Universidad Tecnológica Nacional - UTN FRGP.
-          <br> Me apasiona la tecnología y el desarrollo de software, y estoy comprometido con mi educación y el aprendizaje continuo en este campo. 
-        </p>
-        <div class="socials">
-          <a href="https://www.linkedin.com/in/angel-spinazzola-43a558239/"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://github.com/AngelSpinazzola"><i class="fa-brands fa-github"></i></a>
-        </div>
-      </div>
-    </section>
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-      <h2 class="skill-header">Tecnologías que manejo</h2>
-
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/logo-c-sharp.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/logo-net.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/logo-sql.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img src="assets/icons/MySQL.png" alt="mysql-ico" loading="lazy" class="icon icon-card">
-        </div>
-
-        <div class="second-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/bootstrap-logo-shadow.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-
-          <img
-            src="assets/icons/logo-css.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-javascript.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/GitHub-Light.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          
-          
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects section -->
-    <section class="projects" id="projects">
-      <h2 class="projects-title">Proyectos</h2>
-      <div class="projects-container">
-        <div class="project-container project-card first-project">
-          <div class="project-slider-wrapper">
-            <div class="project-slider">
-              <div><img src="assets/images/sanguisUno.png" alt="slide1" loading="lazy" /></div>
-              <div><img src="assets/images/SanguisDos.png" alt="slide2" loading="lazy" /></div>
-              <div><img src="assets/images/SanguisTres.png" alt="slide3" loading="lazy" /></div>
-              <div><img src="assets/images/SanguisCuatro.png" alt="slide4" loading="lazy" /></div>
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="profile-image-container">
+                <img src="/assets/images/angel.jpg" alt="Tu Nombre" class="profile-image" />
+                <div class="profile-image-bg"></div>
             </div>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Sanguis</h3>
-            <p class="project-details">
-              App Web para donar sangre, desarrollada en ASP.NET | Bootstrap | SQL Server
-            </p>
-            <a href="https://github.com/AngelSpinazzola/TPC-Equipo-8" target="_blank" class="project-link">GitHub</a>
-          </div>
+            <div class="hero-text-content">
+                <h1 class="hero-title">Hola, soy <br>Angel Spinazzola</h1>
+                <h2 class="hero-subtitle">Desarrollador Back-end</h2>
+                <p class="hero-text">Creo experiencias digitales excepcionales que combinan diseño y funcionalidad.
+                    Especializado en desarrollo web moderno y diseño de interfaces de usuario.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/angel-spinazzola/" class="social-link" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/AngelSpinazzola" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://wa.me/+541123921192" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+            </div>
+            
         </div>
-        <!-- Repite el bloque de proyecto para los demás proyectos -->
-        <div class="project-container project-card">
-          <img src="assets/images/cardJitsu2.png" alt="expense-tracker" loading="lazy" class="project-pic" />
-          <h3 class="project-title other-project-title">Card-Jitsu++</h3>
-          <p class="project-details">Juego de cartas desarrollado en C++ basado en el antiguo juego Card-Jitsu, de Club Penguin</p>
-          <a href="https://github.com/AngelSpinazzola/Juego-de-cartas-en-C-" target="_blank" class="project-link">GitHub</a>
-        </div>
-        <div class="project-container project-card">
-          <img src="assets/images/appWinform2.png" alt="netflic-clone" loading="lazy" class="project-pic" />
-          <h3 class="project-title other-project-title">ABM Artículos</h3>
-          <p class="project-details">App de escritorio desarrollada con C# | WinForms | .NET | SQL, que gestiona el abm de artículos</p>
-          <a href="https://github.com/AngelSpinazzola/tp-winform-equipo-8" target="_blank" class="project-link">GitHub</a>
-        </div>
-        <div class="project-container project-card">
-          <img src="assets/images/appTareas.png" alt="greeny-earth" loading="lazy" class="project-pic" />
-          <h3 class="project-title other-project-title">ABM de tareas</h3>
-          <p class="project-details">App Web de tareas con su ABM desarrollada en ASP.NET | EntityFramework | SQL</p>
-          <a href="https://github.com/AngelSpinazzola/C-SHARP/tree/main/CRUD%20en%20ASP.NET%20y%20SQL" target="_blank" class="project-link">GitHub</a>
-        </div>
-      </div>
     </section>
 
-    <!-- Contact section -->
-    <section class="contact" id="contact">
-      <div class="contact-container">
-        <h2>Empezar una conversación</h2>
-        <div class="contact-icon-container">
-          <a
-            href="https://wa.me/541123921192?text=Hola,%20me%20gustaría%20ponerme%20en%20contacto%20contigo"
-            target="_blank"
-            class="whatsapp-link"
-            aria-label="Contactar por WhatsApp"
-          >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-              alt="WhatsApp"
-              class="whatsapp-icon"
-            />
-          </a>
+    <section class="projects" id="proyectos">
+        <h2 class="section-title section-title-icon">
+            <span>
+                <img src="/assets/icons/code-512.webp" alt="skills icon" class="icon-project" />
+            </span>
+            Proyectos
+        </h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image"></div>
+                <h3>Proyecto 1</h3>
+                <p>Descripción del proyecto y tecnologías utilizadas.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-image"></div>
+                <h3>Proyecto 2</h3>
+                <p>Descripción del proyecto y tecnologías utilizadas.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-image"></div>
+                <h3>Proyecto 3</h3>
+                <p>Descripción del proyecto y tecnologías utilizadas.</p>
+            </div>
         </div>
-      </div>
     </section>
 
+    <section class="skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="/assets/icons/logo-c-sharp.png" alt="c#" loading="lazy" class="icon-card" />
+                <h3 class="skill-name">C#</h3>
+            </div>
+            <div class="skill-card">
+                <img src="/assets/icons/logo-net.png" alt="net" loading="lazy" class="icon-card" />
+                <h3 class="skill-name">.NET</h3>
+            </div>
+            <div class="skill-card">
+                <img src="/assets/icons/MySQL.png" alt="mysql" loading="lazy" class="icon-card" />
+                <h3 class="skill-name">MySQL</h3>
+            </div>
+            <div class="skill-card">
+                <img src="/assets/icons/sql-server.png" alt="sql-server" loading="lazy" class="icon-card" />
+                <h3 class="skill-name">SQL Server</h3>
+            </div>
+            <div class="skill-card">
+                <img src="/assets/icons/html.png" alt="html" loading="lazy" class="icon-card" />
+                <h3 class="skill-name">Html</h3>
+            </div>
+            <div class="skill-card">
+                <img src="/assets/icons/css.png" alt="css" loading="lazy" class="icon-card" />
+                <h3 class="skill-name">Css</h3>
+            </div>
+            <div class="skill-card">
+                <img src="/assets/icons/bootstrap-logo-shadow.png" alt="bootstrap" loading="lazy" class="icon-card" />
+                <h3 class="skill-name">Bootstrap</h3>
+            </div>
+            <div class="skill-card">
+                <img src="/assets/icons/logo-js.png" alt="js" loading="lazy" class="icon-card" />
+                <h3 class="skill-name">JavaScript</h3>
+            </div>
+        </div>
+    </section>
 
-    <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up"
-      ><img
-        src="assets/icons/icons8-upward-arrow.gif"
-        class="socicon up-arrow"
-        alt=""
-    /></i>
+    <section class="education-section" id="educacion">
+        <h2 class="section-title">Educación</h2>
+        <div class="education-card">
+            <div class="education-header">
+                <div>
+                    <h3>Tecnicatura en Programación</h3>
+                    <p>Universidad Tecnológica Nacional</p>
+                    <p>2022 - Progreso</p>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-stats">
+                    <span>18/21 materias aprobadas</span>
+                    <span>85% completado</span>
+                </div>
+            </div>
 
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
+            <p>Formación integral en programación y desarrollo de software, con énfasis en desarrollo back-end y
+                prácticas profesionales.</p>
+        </div>
+    </section>
 
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+    <script src="js/app.js"></script>
+</body>
+
 </html>
