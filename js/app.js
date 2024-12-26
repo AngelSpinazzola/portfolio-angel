@@ -1,4 +1,3 @@
-// Navbar scroll effect
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
@@ -8,7 +7,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -39,7 +37,6 @@ document.querySelectorAll('.project-card').forEach(card => {
     let isFlipped = false;
     let touchStartX = 0;
     
-    // Manejador para dispositivos táctiles
     card.addEventListener('touchstart', (e) => {
         touchStartX = e.touches[0].clientX;
     });
@@ -48,7 +45,6 @@ document.querySelectorAll('.project-card').forEach(card => {
         const touchEndX = e.changedTouches[0].clientX;
         const diff = touchStartX - touchEndX;
 
-        // Si el usuario hace un gesto de deslizamiento
         if (Math.abs(diff) > 50) {
             isFlipped = !isFlipped;
             const inner = card.querySelector('.project-card-inner');
@@ -56,7 +52,6 @@ document.querySelectorAll('.project-card').forEach(card => {
         }
     });
 
-    // Manejador para mouse
     card.addEventListener('mouseenter', () => {
         const inner = card.querySelector('.project-card-inner');
         inner.style.transform = 'rotateY(180deg)';

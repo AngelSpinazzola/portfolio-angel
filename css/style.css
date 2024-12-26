@@ -456,7 +456,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1035px) {
     .menu-toggle {
         display: block;
     }
@@ -516,6 +516,7 @@ body {
         width: 60px;
         height: 60px;
     }
+
     .social-links {
         flex-direction: column;
         align-items: center;
@@ -525,6 +526,37 @@ body {
         width: 100%;
         max-width: 300px;
         justify-content: center;
+    }
+
+    .project-card {
+        min-height: 400px;
+    }
+    
+    .project-card-inner {
+        height: 400px;
+    }
+    
+    .project-card-front,
+    .project-card-back {
+        height: 400px;
+        padding: 1rem;
+    }
+    
+    .project-image {
+        height: 180px;
+    }
+    
+    .project-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .project-details {
+        font-size: 0.9rem;
+    }
+    
+    .project-details h4 {
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -541,6 +573,71 @@ body {
         margin-top: 300px;
     }
 
+    .project-card {
+        min-height: 300px; 
+    }
+    
+    .project-card-inner {
+        height: 300px;
+    }
+    
+    .project-card-front,
+    .project-card-back {
+        height: 300px;
+        padding: 0.8rem;
+    }
+    
+    .project-card {
+        min-height: 300px; 
+    }
+    
+    .project-card-inner {
+        height: 300px;
+    }
+    
+    .project-card-front,
+    .project-card-back {
+        height: 300px;
+        padding: 0.8rem;
+    }
+    
+    .project-image {
+        height: 180px; 
+        margin-bottom: 0.5rem;
+        width: 100%;
+        max-width: none;
+    }
+    
+    .project-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .project-details {
+        font-size: 0.85rem;
+    }
+}
+
+@media (hover: none) {
+    .project-card-inner {
+        transform-style: flat;
+    }
+    
+    .project-card:hover .project-card-inner {
+        transform: none;
+    }
+    
+    .project-card {
+        overflow-y: auto;
+        height: auto;
+    }
+    
+    .project-card-front,
+    .project-card-back {
+        position: static;
+        transform: none;
+        margin-bottom: 1rem;
+    }
 }
 
 @keyframes fadeIn {
