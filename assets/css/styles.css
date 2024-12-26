@@ -532,6 +532,7 @@ body.dark-mode {
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
+    z-index: 10;
   }
 
   .navigation a:hover {
@@ -650,29 +651,37 @@ body.dark-mode {
 }
 
 @media only screen and (max-width: 420px) {
-  /* Navbar */
   nav {
-    padding: 1rem 1rem;
+    padding: 1.5rem 1rem;
+  }
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color-dark);
+    flex-direction: column;
+    top: 86px;
+    left: 2%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+    z-index: 10;
+    padding: 2rem 0;
+  }
+
+  .navigation a:hover {
+    color: var(--secondary-color);
+  }
+
+  nav ul li {
+    margin: 8px;
   }
 
   .burger-menu {
     display: block;
   }
 
-  nav ul {
-    display: none; 
-  }
-
-  nav.active ul {
-    display: flex; 
-    flex-direction: column;
-    gap: 0;
-    position: absolute;
-    top: 60px; 
-    left: 0;
-    right: 0;
-    background-color: var(--bg-color);
-    padding: 1rem;
+  nav ul.show {
+    transform: translateX(0);
   }
   .hero {
     flex-direction: column;
