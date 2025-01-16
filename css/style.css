@@ -115,7 +115,7 @@ body {
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     opacity: 0;
     transform: translateY(20px);
@@ -123,12 +123,16 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 2rem;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeUp 0.8s ease forwards 0.2s;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid var(--primary-color);
+    width: 0;
+    animation: 
+        typing 3s steps(20) infinite alternate,
+        blink 0.75s steps(2) infinite;
 }
 
 .hero-text {
@@ -335,11 +339,12 @@ body {
     margin-top: 2rem;
     padding: 0 3rem;
     justify-items: center;
+    gap: 10px;
 }
 
 .skill-card {
     width: 100%; 
-    max-width: 220px;
+    max-width: 200px;
     background-color: #1a1a1a;
     border-radius: 8px;
     padding: 2rem 1rem;
@@ -362,8 +367,8 @@ body {
 }
 
 .icon-card {
-    width: 90px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
     margin-bottom: 1rem;
     transition: transform 0.3s ease;
@@ -469,6 +474,19 @@ body {
     }
 }
 
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50%, 100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% { border-right-color: transparent; }
+}
+
 /* Media Queries */
 @media (max-width: 1035px) {
     .menu-toggle {
@@ -502,7 +520,14 @@ body {
     }
 
     .hero {
-        padding-top: 360px;
+        padding-top: 560px;
+    }
+
+    .hero-subtitle {
+        font-size: 2rem;
+        animation: 
+            typing 3s steps(15) infinite alternate,
+            blink 0.75s steps(2) infinite;
     }
 
     .hero-content {
@@ -525,7 +550,7 @@ body {
     }
 
     .proyectos-section {
-        padding-top: 320px;
+        padding-top: 490px;
     }
 
     .proyectos-item {
@@ -556,11 +581,22 @@ body {
 
 @media (max-width: 590px) {
     .hero {
-        padding-top: 450px;
+        padding-top: 750px;
     }
     
     .hero-title {
         font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+        animation: 
+            typing 3s steps(12) infinite alternate,
+            blink 0.75s steps(2) infinite;
+    }
+
+    .proyectos-section {
+        padding-top: 600px;
     }
 
     .proyectos-item figure {
@@ -580,6 +616,6 @@ body {
     }
 
     .icon-project {
-        font-size: 40px;
+        font-size: 60px;
     }
 }
