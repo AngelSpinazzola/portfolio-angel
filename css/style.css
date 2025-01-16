@@ -7,7 +7,7 @@
 }
 
 :root {
-    --primary-color: #64ffda;
+    --primary-color: #fadb2e;
 }
 
 body {
@@ -68,7 +68,7 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     padding: 0 1.5rem;
@@ -152,14 +152,17 @@ body {
 .proyectos-title {
     color: #fff;
     font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; 
 }
 
 .icon-project {
     color: var(--primary-color);
-    font-size: 60px;
+    font-size: 80px;
 }
+
 
 .proyectos-contenedor {
     display: flex;
@@ -274,7 +277,7 @@ body {
 
 /* Botones código */
 .buttons-codigo {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, 140px);
     gap: 1rem;
 }
@@ -306,6 +309,20 @@ body {
 }
 
 /* Skills Section */
+.skill-title {
+    text-align: center; 
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.skill-category-title {
+    text-align: center; 
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
 .skills {
     padding: 5rem 2rem;
     max-width: 1200px;
@@ -315,12 +332,14 @@ body {
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
     margin-top: 2rem;
-    padding: 0 1rem;
+    padding: 0 3rem;
+    justify-items: center;
 }
 
 .skill-card {
+    width: 100%; 
+    max-width: 220px;
     background-color: #1a1a1a;
     border-radius: 8px;
     padding: 2rem 1rem;
@@ -338,8 +357,12 @@ body {
     background-color: #2a2a2a;
 }
 
+.skill-category-title:first-of-type {
+    margin-top: 2rem;
+}
+
 .icon-card {
-    width: 80px;
+    width: 90px;
     height: 80px;
     object-fit: contain;
     margin-bottom: 1rem;
@@ -351,6 +374,12 @@ body {
 }
 
 /* Education Section */
+.study-title {
+    text-align: center; 
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
 .education-section {
     padding: 5rem 1.5rem;
     max-width: 1200px;
@@ -472,6 +501,10 @@ body {
         font-size: 1.2rem;
     }
 
+    .hero {
+        padding-top: 360px;
+    }
+
     .hero-content {
         flex-direction: column;
         text-align: center;
@@ -485,6 +518,14 @@ body {
     .profile-image {
         width: 250px;
         height: 250px;
+    }
+
+    .skills-container { 
+        gap: 1rem;
+    }
+
+    .proyectos-section {
+        padding-top: 320px;
     }
 
     .proyectos-item {
@@ -514,6 +555,10 @@ body {
 }
 
 @media (max-width: 590px) {
+    .hero {
+        padding-top: 450px;
+    }
+    
     .hero-title {
         font-size: 3rem;
     }
