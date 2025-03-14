@@ -279,6 +279,15 @@ body {
     box-shadow: 0 0 5px #FF5733, 0 0 10px #FF5733, 0 0 15px #FF5733;
 }
 
+.color-swagger { 
+    background-color: #85ea2d; 
+    color: black;
+}
+
+.color-swagger:hover { 
+    box-shadow: 0 0 5px #85ea2d, 0 0 10px #85ea2d, 0 0 15px #85ea2d;
+}
+
 /* Botones código */
 .buttons-codigo {
     display: flex;
